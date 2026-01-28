@@ -52,9 +52,11 @@ Shape:
 }
 ```
 
-## Screenshots (required)
 
-Add screenshots here before submission:
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 - Opportunities page — `app/(root)/opportunities/page.tsx`
   - Description: List of job cards populated from JSON with avatar and tags.
