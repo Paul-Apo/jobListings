@@ -1,0 +1,80 @@
+{
+  "job_postings": [
+    {
+      "title": "Social Media Assistant",
+      "organization": "Young Men Christians Association",
+      "location": "Addis Ababa, Ethiopia",
+      "description": "As a Social Media Assistant, you will work closely with the social media manager or marketing team to execute social media strategies and campaigns. You will be responsible for assisting in the creation and scheduling of engaging content, monitoring social media channels, and interacting with followers.",
+      "tags": ["In Person", "Education", "IT"],
+      "avatarUrl": "https://i.pravatar.cc/150?img=12",
+      "postedOn": "Jul 1, 2023",
+      "deadline": "Jul 31, 2011",
+      "startDate": "Aug 02, 2023",
+      "endDate": "Sep 02, 2023",
+      "categories": ["Marketing", "Design"],
+      "skills": ["Social Media Marketing", "English", "Copywriting"],
+      "responsibilities": [
+        "Community engagement to ensure that is supported and actively represented online",
+        "Focus on social media content development and publication",
+        "Marketing and strategy support",
+        "Stay on top of trends on social media platforms, and suggest content ideas to the team",
+        "Engage with online communities"
+      ],
+      "idealCandidate": [
+        "Young (18-24 year old) Female social media manager",
+        "Passionate & Reliable: Genuine interest in our mission and a strong desire to make a positive impact; responsible, and committed to fulfilling volunteer commitments.",
+        "Adaptable, Team Player & Strong Communication Skills: Able to work effectively in diverse teams; flexible and open to embracing new challenges and shifting priorities; clear verbal and written communication, active listening, and constructive feedback.",
+        "Respectful: Embraces diversity, inclusive, and treats others with respect. Abides with all our rules and regulations."
+      ],
+      "whenWhere": "The onboarding event for this event will take place in Jan 18th, 2023 in AAU Auditorium"
+    },
+    {
+      "title": "Volunteer Teacher",
+      "organization": "School Under The Tree",
+      "location": "Addis Ababa, Ethiopia",
+      "description": "Support social media content and assist in community engagement initiatives for educational programs.",
+      "tags": ["In Person", "Education", "IT"],
+      "avatarUrl": "https://i.pravatar.cc/150?img=32",
+      "postedOn": "Jun 15, 2023",
+      "deadline": "Aug 10, 2023",
+      "startDate": "Aug 20, 2023",
+      "endDate": "Oct 01, 2023",
+      "categories": ["Education"],
+      "skills": ["Teaching", "Communication"],
+      "responsibilities": [
+        "Assist classes and support community learning",
+        "Help develop learning materials",
+        "Engage with parents and local community"
+      ],
+      "idealCandidate": [
+        "Patient and committed to education",
+        "Good communication skills"
+      ],
+      "whenWhere": "Weekly sessions at AAU Community Center"
+    },
+    {
+      "title": "Social Media Assistant",
+      "organization": "The Africa in me",
+      "location": "Addis Ababa, Ethiopia",
+      "description": "Assist in content scheduling, monitor channels, and interact with followers to grow brand presence.",
+      "tags": ["In Person", "Education", "IT"],
+      "avatarUrl": "https://i.pravatar.cc/150?img=28",
+      "postedOn": "Jul 5, 2023",
+      "deadline": "Aug 01, 2023",
+      "startDate": "Aug 10, 2023",
+      "endDate": "Sep 20, 2023",
+      "categories": ["Marketing"],
+      "skills": ["Social Media", "Design Basics"],
+      "responsibilities": [
+        "Schedule posts and assist with content planning",
+        "Monitor comments and messages",
+        "Report weekly on engagement"
+      ],
+      "idealCandidate": [
+        "Team player with eye for design",
+        "Can commit 10 hrs/week"
+      ],
+      "whenWhere": "On-site at HQ, Addis Ababa"
+    }
+  ]
+}

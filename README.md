@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Job Listing Application (Task 6)
+
+A small job listing app built with Next.js App Router and Tailwind CSS. It implements a Job Card component, an Opportunities page that lists jobs from JSON, and an Applicant Dashboard/Description page.
 
 ## Getting Started
 
-First, run the development server:
+Run the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# or: yarn dev / pnpm dev / bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## App Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/(root)/opportunities/page.tsx` — Opportunities list (fetches `/jobs.json`).
+- `app/(dashboard)/dashboard/page.tsx` — Applicant Dashboard/Description (fetches `/jobs.json`).
+- `components/JobCard.tsx` — Reusable job card with avatar + tag pills.
+- `public/jobs.json` — Data source mirrored from the provided Google Doc.
+- `middleware.ts` — Redirects `/` to `/opportunities`.
 
-## Learn More
+## Data Source
 
-To learn more about Next.js, take a look at the following resources:
+The app reads jobs from a local JSON file: `public/jobs.json`.
+This mirrors fields from the shared document and avoids CORS issues.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Shape:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```json
+{
+  "job_postings": [
+    {
+      "title": "...",
+      "organization": "...",
+      "location": "...",
+      "description": "...",
+      "tags": ["In Person", "Education", "IT"],
+      "avatarUrl": "https://...",
+      "postedOn": "...",
+      "deadline": "...",
+      "startDate": "...",
+      "endDate": "...",
+      "categories": ["..."],
+      "skills": ["..."],
+      "responsibilities": ["..."],
+      "idealCandidate": ["..."],
+      "whenWhere": "..."
+    }
+  ]
+}
+```
 
-## Deploy on Vercel
+## Screenshots (required)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Add screenshots here before submission:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Opportunities page — `app/(root)/opportunities/page.tsx`
+  - Description: List of job cards populated from JSON with avatar and tags.
+- Applicant Dashboard — `app/(dashboard)/dashboard/page.tsx`
+  - Description: Data-driven description, responsibilities, ideal candidate, when & where, and sidebar (about, categories, skills).
+
+Place your images in `README-assets/` and reference them below:
+
+```
+![Opportunities](README-assets/opportunities.png)
+![Dashboard](README-assets/dashboard.png)
+```
+
+## Notes
+
+- Styling is implemented with Tailwind CSS (v4). Tags are color-coded to match the UI reference.
+- `JobCard` accepts an optional `href` to make the whole card clickable (navigates to the dashboard in this demo).
+- To use a remote JSON instead of `public/jobs.json`, replace the `fetch` URLs accordingly and ensure CORS allows the request.
